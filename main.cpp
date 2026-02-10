@@ -6,20 +6,30 @@
 //
 
 #include <iostream>
+#include <iomanip>
 using namespace std;
+#include "sorting.h"
 
-int main(int argc, char * argv[]) {
+int main(int argc, char * argv[]) 
+{
     
  
   cout<<"argc is "<<argc<<endl;
-    int i,N;
-    int *a;
-    for(i=1;i<argc;i++){
-        cout<<"argv[" << i<<"]" <<argv[i]<<endl;
-      
+  int i,N;
+  int *a;
+
+  N = argc - 1;
+  a = new int[N];
+
+  
+
+    for(i=1;i<argc;i++)
+    {
+        cout<<"argv[" << i<<"]" << argv[i] << endl;
+        a[i-1] = atoi(argv[i+1]);
     }
-    /* Convert to numbers*/
-    N=argc-1;
+
+
     cout<<"Before sorting:";
     display(a,N);
     
