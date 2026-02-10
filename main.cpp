@@ -38,6 +38,7 @@ int main(int argc, char *argv[])
     //cout<<"After sorting:";
     display(a,N);
     
+    delete[] a;
     
     return 0;
 }
