@@ -11,9 +11,8 @@ void swap(int &a,int &b)
 
 void sort(int *a,int N)
 {
-    int i, j;
 
-    for (i=0; i<N; i++)
+    for ( int i=0; i<N-1; i++)
     {
         // for ascending order
         if (a[i] > a[i+1]) 
