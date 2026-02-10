@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 {
     
  
-  cout<<"argc is "<<argc<<endl;
+  // cout<<"argc is "<<argc<<endl;
   int i,N;
 
   int *a;
@@ -26,16 +26,16 @@ int main(int argc, char *argv[])
 
     for(i=1;i<argc;i++)
     {
-        cout<<"argv[" << i<<"]" << argv[i] << endl;
+        // cout<<"argv[" << i<<"]" << argv[i] << endl;
         a[i-1] = atoi(argv[i]);
     }
 
 
-    cout<<"Before sorting:";
-    display(a,N);
+    //cout<<"Before sorting:";
+    //display(a,N);
     
     sort(a,N);
-    cout<<"After sorting:";
+    //cout<<"After sorting:";
     display(a,N);
     
     
